@@ -10,7 +10,7 @@ Use Arrow up and down to auto complete partial bash command line
 
 ### Svn make diff dump "diff"
 
-Usages : 
+Usages : \
 ```$ diff <commit_number>```
 -> Return a dump containing changes between <commit_number> and HEAD
 
