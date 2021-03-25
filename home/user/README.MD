@@ -1,12 +1,12 @@
 # Snippets
 
-## .inputrc
+## .inputrc
 
-### Auto complete command
+### Auto complete command
 
 Use Arrow up and down to auto complete partial bash command line
 
-## .bashrc
+## .bashrc
 
 ### Svn make diff dump "diff"
 
