@@ -1,0 +1,58 @@
+// Snippet for .java files
+{
+	"Comment Template" : {
+		"prefix": ["temp", "template"],
+		"body": [
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Package",
+			"$LINE_COMMENT====================================================",
+			"\n$0\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Import",
+			"$LINE_COMMENT====================================================",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Class",
+			"$LINE_COMMENT====================================================",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT End",
+			"$LINE_COMMENT====================================================",
+		],
+		"description": "Comment Template"
+	},
+	"Init package" : {
+		"prefix": ["package"],
+		"body": [
+			"package $0;"
+		],
+		"description": "Init package"
+	},
+	"Init import" : {
+		"prefix": ["import"],
+		"body": [
+			"import $0;"
+		],
+		"description": "Init import"
+	},
+	// Class
+	"Create class" : {
+		"prefix": ["class"],
+		"body": [
+			"public class $TM_FILENAME_BASE {",
+			"\t$0",
+			"}"
+		],
+		"description": "Create class"
+	},
+	"Add constructor" : {
+		"prefix": ["cons", "constructor"],
+		"body": [
+			"public $TM_FILENAME_BASE($1){",
+			"\t$0",
+			"}\n"
+		],
+		"description": "Add constructor"
+	}
+
+}

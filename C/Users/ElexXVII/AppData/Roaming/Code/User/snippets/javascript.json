@@ -1,0 +1,249 @@
+// Snippet for .js files
+{
+	"Comment Template React" : {
+		"prefix": ["tempr", "templateReact"],
+		"body": [
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Import",
+			"$LINE_COMMENT====================================================",
+			"",
+			"$LINE_COMMENT======================",
+			"$LINE_COMMENT Vendors",
+			"\n$0\n",
+			"$LINE_COMMENT======================",
+			"$LINE_COMMENT Own",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Define",
+			"$LINE_COMMENT====================================================",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Component",
+			"$LINE_COMMENT====================================================",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Export",
+			"$LINE_COMMENT====================================================",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT End",
+			"$LINE_COMMENT====================================================",
+		],
+		"description": "Comment Template"
+	},
+	"Comment Template Node" : {
+		"prefix": ["tempn", "templateNode"],
+		"body": [
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Require",
+			"$LINE_COMMENT====================================================",
+			"",
+			"$LINE_COMMENT======================",
+			"$LINE_COMMENT Vendors",
+			"\n$0\n",
+			"$LINE_COMMENT======================",
+			"$LINE_COMMENT Own",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Define",
+			"$LINE_COMMENT====================================================",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Functions",
+			"$LINE_COMMENT====================================================",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Main",
+			"$LINE_COMMENT====================================================",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Export",
+			"$LINE_COMMENT====================================================",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT End",
+			"$LINE_COMMENT====================================================",
+		],
+		"description": "Comment Template"
+	},
+	"Comment Template JavaScript" : {
+		"prefix": ["tempj", "templateJS"],
+		"body": [
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Define",
+			"$LINE_COMMENT====================================================",
+			"\n$0\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Functions",
+			"$LINE_COMMENT====================================================",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Main",
+			"$LINE_COMMENT====================================================",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT End",
+			"$LINE_COMMENT====================================================",
+		],
+		"description": "Comment Template"
+	},
+	
+	// p5
+	"Add p5 base sketch" : {
+		"prefix": ["p", "ske", "sketch"],
+		"body": [
+			"",
+			"function setup(){",
+			"\tcreateCanvas($1,$1);",
+			"\tbackground(0);",
+			"}",
+			"",
+			"function draw(){",
+			"\t$0",
+			"}\n",
+		],
+		"description": "Add a p5 base script"
+	},
+	"Setup p5" : {
+		"prefix": ["setup"],
+		"body": [
+			"function setup(){",
+			"\tcreateCanvas($1,$1);",
+			"\t$0",
+			"}\n"
+		],
+		"description": "Setup p5"
+	},
+	"Draw p5" : {
+		"prefix": ["draw"],
+		"body": [
+			"function draw(){",
+			"\t$0",
+			"}\n"
+		],
+		"description": "Draw p5"
+	},
+	// JavaScript
+	"Function" : {
+		"prefix": ["f", "fun", "function"],
+		"body": [
+			"function $1($2) {",
+			"\t$0",
+			"}"
+		],
+		"description": "Add function"
+	},
+	"Fetch" : {
+		"prefix": ["fet","fetch"],
+		"body": [
+			"fetch(\"$1\", {",
+			"\t{",
+			"\t\t'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'",
+			"\t}",
+			".then(function(res){ return res.json(); })",
+			".then(function(data){",
+			"\t$0",
+			"})"
+		],
+		"description": "Fetch"
+	},
+	// Express
+	"Express" : {
+		"prefix": ["express"],
+		"body": [
+			"const express = require(\"express\");",
+			"const fs = require('fs');",
+			"var bodyParser = require('body-parser');",
+			"",
+			"const PORT = $1;",
+			"const app = express();",
+			"var router = express.Router();",
+			"",
+			"router.use(function(req, res, next) {",
+			"\tres.header(\"Access-Control-Allow-Origin\", \"*\");",
+			"\tres.header(\"Origin, X-Requested-With, Content-Type, Accept\");",
+			"\tnext();",
+			"});",
+			"",
+			"router.use(bodyParser.urlencoded({ extended: true }));",
+			"",
+			"router.get('/', function(req, res) {",
+			"\t$0",
+			"});",
+			"",
+			"app.use('/', router);",
+			"",
+			"app.listen(PORT, function () {",
+			"\tconsole.log(\"App listening on port \"+PORT+\"!\");",
+			"});",
+			""
+		],
+		"description": "Add express"
+	},
+	"Require fs" : {
+		"prefix": ["fs"],
+		"body": [
+			"const fs = require(\"fs\");"
+		],
+		"description": "Require fs module"
+	},
+	"Require body-parser" : {
+		"prefix": ["body"],
+		"body": [
+			"const bodyParser = require(\"body-parser\");"
+		],
+		"description": "Require body-parser module"
+	},
+	"Require express" : {
+		"prefix": ["express"],
+		"body": [
+			"const express = require(\"express\");"
+		],
+		"description": "Require express module"
+	},
+	// React
+	"React function" : {
+		"prefix": ["component", "react component", "react function", "function compoennt"],
+		"body": [
+			"function $1() {",
+			"\t",
+			"\treturn (",
+			"\t\t<div>$0</div>",
+			"\t)",
+			"}"
+		],
+		"description": "Create a function component"
+	},
+	"Add useState statement" : {
+		"prefix": ["useState"],
+		"body": [
+			"const [state, setState] = useState({",
+			"\t$0",
+			"});"
+		],
+		"description": "Add useState statement"
+	},
+	"Add useStyles statement" : {
+		"prefix": ["useStyles","classes"],
+		"body": [
+			"const classes = useStyles();"
+		],
+		"description": "Add useStyles statement"
+	},
+	"Add makeStyles statement" : {
+		"prefix": ["makeStyles","make"],
+		"body": [
+			"const useStyles = makeStyles((theme) => ({",
+			"\t$0",
+			"}));"
+		],
+		"description": "Add makeStyles statement"
+	},
+	"url-encode" : {
+		"prefix": ["url", "urlencode", "encode"],
+		"body": [
+			"'Content-Type': 'application/x-www-form-urlencoded'"
+		],
+		"description": ""
+	}
+}

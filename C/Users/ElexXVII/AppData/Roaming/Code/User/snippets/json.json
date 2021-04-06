@@ -1,0 +1,33 @@
+// Snippet for .css files
+{
+	// Snippet 
+	"Create a snippet" : {
+		"prefix": ["create", "snippet-create"],
+		"body": [
+			"\/\/ Snippet for .$TM_FILENAME_BASE files",
+			"{",
+			"\t\"$1\" : {",
+			"\t\t\"prefix\": [\"$2\"],",
+			"\t\t\"body\": [",
+			"\t\t\t\"$0\"",
+			"\t\t],",
+			"\t\t\"description\": \"$3\"",
+			"\t}",
+			"}"
+		],
+		"description": "Create the Json to make a snippet"
+	},
+	"Add a snippet" : {
+		"prefix": ["add", "snippet-add"],
+		"body": [
+			"\"$1\" : {",
+			"\t\"prefix\": [\"$2\"],",
+			"\t\"body\": [",
+			"\t\t\"$0\"",
+			"\t],",
+			"\t\"description\": \"$3\"",
+			"}",
+		],
+		"description": "Add the Json to make a snippet"
+	},
+}

@@ -1,0 +1,143 @@
+{
+	// Place your snippets for javascriptreact here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// },
+	// React
+	"Comment Template React" : {
+		"prefix": ["tempr", "templateReact"],
+		"body": [
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Import",
+			"$LINE_COMMENT====================================================",
+			"",
+			"$LINE_COMMENT======================",
+			"$LINE_COMMENT Vendors",
+			"\n$0\n",
+			"$LINE_COMMENT======================",
+			"$LINE_COMMENT Own",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Define",
+			"$LINE_COMMENT====================================================",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Component",
+			"$LINE_COMMENT====================================================",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Export",
+			"$LINE_COMMENT====================================================",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT End",
+			"$LINE_COMMENT====================================================",
+		],
+		"description": "Comment Template"
+	},
+	"React function" : {
+		"prefix": ["component", "react component", "react function", "function compoennt"],
+		"body": [
+			"function $1() {",
+			"\t",
+			"\treturn (",
+			"\t\t<div>$0</div>",
+			"\t)",
+			"}"
+		],
+		"description": "Create a function component"
+	},
+	"Add useState statement" : {
+		"prefix": ["useState"],
+		"body": [
+			"const [state, setState] = useState({",
+			"\t$0",
+			"});"
+		],
+		"description": "Add useState statement"
+	},
+	"Add useStyles statement" : {
+		"prefix": ["useStyles","classes"],
+		"body": [
+			"const classes = useStyles();"
+		],
+		"description": "Add useStyles statement"
+	},
+	"Add makeStyles statement" : {
+		"prefix": ["makeStyles","make"],
+		"body": [
+			"const useStyles = makeStyles((theme) => ({",
+			"\t$0",
+			"}));"
+		],
+		"description": "Add makeStyles statement"
+	},
+	// p5
+	"Add p5 base sketch" : {
+		"prefix": ["p", "ske", "sketch"],
+		"body": [
+			"",
+			"function setup(){",
+			"\tcreateCanvas($1,$1);",
+			"\tbackground(0);",
+			"}",
+			"",
+			"function draw(){",
+			"\t$0",
+			"}\n",
+		],
+		"description": "Add a p5 base script"
+	},
+	"Setup p5" : {
+		"prefix": ["setup"],
+		"body": [
+			"function setup(){",
+			"\tcreateCanvas($1,$1);",
+			"\t$0",
+			"}\n"
+		],
+		"description": "Setup p5"
+	},
+	"Draw p5" : {
+		"prefix": ["draw"],
+		"body": [
+			"function draw(){",
+			"\t$0",
+			"}\n"
+		],
+		"description": "Draw p5"
+	},
+	// JavaScript
+	"Function" : {
+		"prefix": ["f", "fun", "function"],
+		"body": [
+			"function $1($2) {",
+			"\t$0",
+			"}"
+		],
+		"description": "Add function"
+	},
+	"Fetch" : {
+		"prefix": ["fet","fetch"],
+		"body": [
+			"fetch(\"$1\", {",
+			"\theaders: [",
+			"\t\t['Content-Type', 'application/json'],]",
+			"})",
+			".then(function(res){ return res.json(); })",
+			".then(function(data){",
+			"\t$0",
+			"})"
+		],
+		"description": "Fetch"
+	},
+}

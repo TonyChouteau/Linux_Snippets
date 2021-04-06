@@ -1,4 +1,4 @@
-# Snippets
+# Linux Snippets
 
 ## .inputrc
 

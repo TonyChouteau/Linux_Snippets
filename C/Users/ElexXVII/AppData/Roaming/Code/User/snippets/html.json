@@ -1,0 +1,42 @@
+// Snippet for .html files
+{
+	"Create a base .html file" : {
+		"prefix": ["create", "html"],
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"en\">",
+			"<head>",
+			"\t<meta charset=\"UTF-8\">",
+			"\t<title>$1</title>",
+			"\t<link href=\"./index.css\" rel=\"stylesheet\">",
+			"\t<script src=\"./index.js\" type=\"text/javascript\"></script>",
+			"</head>",
+			"<body>",
+			"\t$0",
+			"</body>",
+			"</html>"
+		],
+		"description": "Create a base html file"
+	},
+	"Add css tag" : {
+		"prefix": ["css"],
+		"body": [
+			"\t<link href=\"./index.css\" rel=\"stylesheet\">"
+		],
+		"description": "Add css tag to an html file"
+	},
+	"Add js tag" : {
+		"prefix": ["js"],
+		"body": [
+			"\t<script src=\"./index.js\" type=\"text/javascript\"></script>"
+		],
+		"description": "Add js tag to an html file"
+	},
+	"Add P5 cdn tag" : {
+		"prefix": ["p5"],
+		"body": [
+			"<script src=\"https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js\"></script>"
+		],
+		"description": "Add p5 cdn tag to an html file"
+	}
+}

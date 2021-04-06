@@ -1,0 +1,34 @@
+// Snippet for .python files
+{
+	"Comment Template" : {
+		"prefix": ["temp", "template"],
+		"body": [
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Import",
+			"$LINE_COMMENT====================================================",
+			"",
+			"$LINE_COMMENT======================",
+			"$LINE_COMMENT Vendors",
+			"\n$0\n",
+			"$LINE_COMMENT======================",
+			"$LINE_COMMENT Own",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Define",
+			"$LINE_COMMENT====================================================",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Functions",
+			"$LINE_COMMENT====================================================",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT Entry Point",
+			"$LINE_COMMENT====================================================",
+			"\n\n",
+			"$LINE_COMMENT====================================================",
+			"$LINE_COMMENT End",
+			"$LINE_COMMENT====================================================",
+		],
+		"description": "Comment Template"
+	}
+}
