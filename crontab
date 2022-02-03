@@ -1,0 +1,4 @@
+#sudo
+0 12 * * * sudo /usr/bin/certbot renew --quiet
+0 12 * * * cp /etc/letsencrypt/live/www.example.com.conf/* /project/cert/
+0 12 * * * /project/run.sh
