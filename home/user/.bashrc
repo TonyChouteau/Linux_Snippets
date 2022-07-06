@@ -1,3 +1,8 @@
+function sshi { ssh user@"$1".domain.com -p22; }
+export -f sshi
+function ssht { ssh -L port_local:127.0.0.1:port_distant user@"$1".domain.com -p22 -4 -g -N; }
+export -f ssht
+
 alias diff=diff
 function diff() {
     d=$(date "+%d-%m-%y_%H:%M:%S")
@@ -10,4 +15,16 @@ function diff() {
         echo patch made at $d
         svn diff -r $1:$2 > ~/diff_$d
     fi
+}
+
+alias adb=adb
+function adb() {
+    adb devices
+    while true; do
+        read -p "Install (y/n) ? " yn
+        case $yn in
+            [Yy]* ) adb install app.apk; break;;
+            [Nn]* ) exit;;
+        esac
+    done
 }
