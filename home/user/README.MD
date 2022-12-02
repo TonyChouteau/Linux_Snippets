@@ -26,6 +26,6 @@ Usage : \
 Work as ls, but replacing timestamp (seconds and micro) by human readable datetime
 
 Usages with .bashrc alias :\
-```$lt -l```\
-```$lt -alh /path/to/```
+```$ lt -l```\
+```$ lt -alh /path/to/```
 
