@@ -28,3 +28,5 @@ function adb() {
         esac
     done
 }
+
+alias lt="python3 ~/ls_time.py"
