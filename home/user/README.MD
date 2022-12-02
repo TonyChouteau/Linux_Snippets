@@ -19,7 +19,7 @@ Return a dump containing changes between <commit_number_start> and <commit_numbe
 
 Dump are saved in `/home/<user>/diff_dd-mm-yy_hh:mm:ss`
 
-### replacement of timestamps by datetime in "ls" bash command listing
+### LS with timestamp replaced with datetime 
 
 Usage : \
 ```$ python3 ls_time.py [ls_args]```\
