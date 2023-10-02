@@ -30,3 +30,13 @@ function adb() {
 }
 
 alias lt="python3 ~/ls_time.py"
+
+alias bls=bls
+function bls() {
+     ssh -t user@domain.com "ls \"$1\""
+}
+alias bscpp=bscpp
+function bscpp() {
+     echo "Downloading $1 from server1"
+     (scp user@domain1.com:~/$1 ~/dl) && [[ $2 ]] && (echo "Uploading $1 to $2") && (scp -Pport ~/dl/$1 user@$2:~)
+}
